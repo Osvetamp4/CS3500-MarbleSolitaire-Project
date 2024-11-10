@@ -32,9 +32,13 @@ Controllers:
  MarbleSolitaireControllerImpl
 
 In addition to those files, we had set of subclasses that were built to encapsulate more of the code surrounding the solitaire models:
+
  Gameboard
+ 
  EuropeanGameboard
+ 
  TriangleGameboard
+ 
 Our project didn't explicitly state that we needed them but we decided that in order to further simplify our code, we would encapsulate more of the initialization of the playing board to those gameboard classes.
 
 We obviously got the green light to implement them as to make sure we weren't directly disobeying instructions.
@@ -42,11 +46,18 @@ We obviously got the green light to implement them as to make sure we weren't di
 To address what appears to be a discrepancy in our file system, we realized that both the Gameboard and EuropeanGameboards had extremely similar initialization methods in the EnglishSolitaireModel so we decided to merge them together instead of seperating the EuropeanGameboard into its own EuropeanSolitaireModel. However, TriangleSolitaireModel was its own beast with a completely different initialization method which neccessitated a seperate TriangleSolitaireModel. In hindsight, it was probably a better idea to stick to naming conventions and give EuropeanGameboard its own EuropeanSolitaireModel to sticky by naming conventions and have consistency in our filesystem.
 
 We also implemented Abstraction classes to abstract most of the redundant code away from most of our model and gameboard files:
+
  AbstractGameboard
+ 
  AbstractSolitaireModel
 
 We also implemented Interfaces to further simplify the code and allow for easier upkeep:
+
  MarbleSolitaireController
+ 
  MarbleSolitaireModel
+ 
  MarbleSolitaireModelState
+ 
  MarbleSolitaireView
+ 
