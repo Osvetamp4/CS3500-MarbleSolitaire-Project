@@ -16,12 +16,19 @@ We tested our code in the respective testing folder. We ran and tested our code 
 We implemented the game using the MVC design pattern with the following files:
 
 Models:
+
  EnglishSolitaireModel
+ 
  TriangleSolitaireModel
+ 
 Views:
+
  EnglishSolitaireTextView
+ 
  TriangleSolitaireTextView
+ 
 Controllers:
+
  MarbleSolitaireControllerImpl
 
 In addition to those files, we had set of subclasses that were built to encapsulate more of the code surrounding the solitaire models:
